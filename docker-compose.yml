@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis
+    environment:
+      - REDIS_HOST=$REDIS_HOST
+      - REDIS_PORT=$REDIS_PORT
+    ports:
+      - "6379:6379"
+    networks:
+      - app-apinode
+  
+  app:
+    build: .
+    container_name: app
+    depends_on:
+      - redis
+    networks:
+      - app-apinode
+    ports:
+      - $PORT_LOCAL_NODE:$PORT_DOCKER_NODE
+
+
+networks:
+  app-apinode:
