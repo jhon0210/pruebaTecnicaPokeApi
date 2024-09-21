@@ -30,11 +30,11 @@ http://localhost:3000/api/pokemonAndTypes/:id
 1. Se subio tambien el archivo .env ya que es un repo de prueba, para su comodidad utilizar en su equpo local el puerto 3000,
    en caso de que utilice otro por favor cambiarlo en el archivo .env y en el archivo index.js
    
-2.En caso de que requieran ejecutar el entorno de pruebas seguir las siguientes instrcciones
- * Detener la ejecucion de docker
- * Arrancar el contenedor de docker con docker start <ID_CONTENEDOR> Ò <NOMBRE_CONTEENDOR>
- * En el archivo .env, en REDIS_HOST cambiar el nombre del host por localhost
- * Ejecutar el comando npm test
+2. En caso de que requieran ejecutar el entorno de pruebas seguir las siguientes instrcciones
+    * Detener la ejecucion de docker
+    * Arrancar el contenedor de docker con docker start <ID_CONTENEDOR> Ò <NOMBRE_CONTEENDOR>
+    * En el archivo .env, en REDIS_HOST cambiar el nombre del host por localhost
+    * Ejecutar el comando npm test
 
 
 
